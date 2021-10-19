@@ -51,6 +51,7 @@ namespace CRUD2
             {
                 //llamo al formulario de contactos para poder editar
                 FormContactos formcontactos = new FormContactos();
+                //metodo que carga el contacto seleccionado
                 formcontactos.LoadContact(new Contacto
                 {
                     Id = int.Parse((GridContactos.Rows[e.RowIndex].Cells[0]).Value.ToString()),
@@ -62,6 +63,7 @@ namespace CRUD2
                 //Muestra el formulario de educion
                 formcontactos.ShowDialog(this);
             }
+            //si selecciona eliminar
             else if (cell.Value.ToString() == "Eliminar")
             {
                BorrarContacto(int.Parse((GridContactos.Rows[e.RowIndex].Cells[0]).Value.ToString()));

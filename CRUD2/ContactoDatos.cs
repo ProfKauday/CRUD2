@@ -140,7 +140,7 @@ namespace CRUD2
             catch (Exception)
             {
 
-                throw;
+                //throw;
             }
             //cierra la coneccion
             finally

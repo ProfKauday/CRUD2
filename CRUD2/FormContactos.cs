@@ -63,6 +63,7 @@ namespace CRUD2
 
         }
 
+        //se ejecuta cuando selecciona editar en la grilla
         public void LoadContact(Contacto contacto)
 
         {//aqui en esta variabl global copio la instancia e contacto para guardarme el ID del contacto
